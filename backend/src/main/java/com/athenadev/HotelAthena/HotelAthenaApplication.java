@@ -9,7 +9,7 @@ public class HotelAthenaApplication {
 
 	public static void main(String[] args) {
 
-		Dotenv dotenv = Dotenv.load();
+
 		SpringApplication.run(HotelAthenaApplication.class, args);
 		System.out.println("hello athena");
 	}
