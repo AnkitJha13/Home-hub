@@ -1,14 +1,25 @@
-# Step 1: Use Maven to build the application
-FROM maven:3.8.5-openjdk-17 AS build
+FROM maven:3.8.4-openjdk-17 AS build
 
-COPY . .
+WORKDIR /app
+
+COPY pom.xml .
+
+RUN mvn dependency:go-offline
+
+COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-FROM openjdk:17.0.1-jdk-slim
 
-COPY --from=build /app/target/HotelAthena-0.0.1-SNAPSHOT.jar
+FROM openjdk:17-jdk-slim
 
-EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "/app/HotelAthena-0.0.1-SNAPSHOT.jar"]
+WORKDIR /app
+
+
+COPY --from=build /app/target/HotelAthena-0.0.1-SNAPSHOT.jar .
+
+EXPOSE 4040
+
+
+ENTRYPOINT ["java", "-jar", "HotelAthena-0.0.1-SNAPSHOT.jar"]
