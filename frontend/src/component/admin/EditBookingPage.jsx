@@ -26,14 +26,14 @@ const EditBookingPage = () => {
 
 
     const acheiveBooking = async (bookingId) => {
-        if (!window.confirm('Are you sure you want to Acheive this booking?')) {
+        if (!window.confirm('Are you sure you want to delete this booking?')) {
             return; // Do nothing if the user cancels
         }
 
         try {
             const response = await ApiService.cancelBooking(bookingId);
             if (response.statusCode === 200) {
-                setSuccessMessage("The boking was Successfully Acheived")
+                setSuccessMessage("The boking was Successfully Deleted")
                 
                 setTimeout(() => {
                     setSuccessMessage('');
@@ -83,7 +83,7 @@ const EditBookingPage = () => {
                     </div>
                     <button
                         className="acheive-booking"
-                        onClick={() => acheiveBooking(bookingDetails.id)}>Acheive Booking
+                        onClick={() => acheiveBooking(bookingDetails.id)}>Delete Booking
                     </button>
                 </div>
             )}
