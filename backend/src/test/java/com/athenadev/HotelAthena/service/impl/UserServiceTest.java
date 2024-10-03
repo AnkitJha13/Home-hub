@@ -1,7 +1,9 @@
 package com.athenadev.HotelAthena.service.impl;
 
+import com.athenadev.HotelAthena.dto.LoginRequest;
 import com.athenadev.HotelAthena.dto.Response;
 import com.athenadev.HotelAthena.entity.User;
+import com.athenadev.HotelAthena.exception.OurException;
 import com.athenadev.HotelAthena.repo.UserRepository;
 import com.athenadev.HotelAthena.utils.JWTUtils;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,13 +13,18 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
-@ExtendWith(MockitoExtension.class)
-class UserServiceTest {
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)  // Use @ExtendWith for JUnit 5
+public class UserServiceTest {
 
     @InjectMocks
     private UserService userService;
@@ -56,7 +63,6 @@ class UserServiceTest {
         assertEquals("successful", response.getMessage());
     }
 
-
     @Test
     public void testRegister_UserAlreadyExists() {
         User user = new User();
@@ -70,4 +76,18 @@ class UserServiceTest {
         assertEquals("test@example.com Already Exists", response.getMessage());
     }
 
+    @Test
+    public void testDeleteUser_UserFound() {
+        String userId = "1";
+        User user = new User();
+        user.setEmail("user@example.com");
+
+        when(userRepository.findById(Long.valueOf(userId))).thenReturn(Optional.of(user));
+
+        Response response = userService.deleteUser(userId);
+
+        assertEquals(200, response.getStatusCode());
+        assertEquals("successful", response.getMessage());
+        verify(userRepository).deleteById(Long.valueOf(userId)); // Verify deletion
+    }
 }
