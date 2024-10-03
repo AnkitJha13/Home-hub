@@ -2,7 +2,9 @@ import axios from "axios"
 
 export default class ApiService {
 
-    static BASE_URL = "https://demo-deployment-mjou.onrender.com"
+     static BASE_URL = "https://demo-deployment-mjou.onrender.com"
+
+    
 
 
     static getHeader() {

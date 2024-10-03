@@ -45,15 +45,22 @@ public class Booking {
 
 
     public void calculateTotalNumberOfGuests(){
+
         this.totalNumOfGuest = this.numOfAdults + this.numOfChildren;
     }
 
     public void setNumOfAdults(int numOfAdults) {
+        if (numOfAdults < 1) {
+            throw new IllegalArgumentException("Number of adults must be at least 1");
+        }
         this.numOfAdults = numOfAdults;
         calculateTotalNumberOfGuests();
     }
 
     public void setNumOfChildren(int numOfChildren) {
+        if (numOfChildren < 0) {
+            throw new IllegalArgumentException("Number of children cannot be negative");
+        }
         this.numOfChildren = numOfChildren;
         calculateTotalNumberOfGuests();
     }
