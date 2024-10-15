@@ -2,9 +2,7 @@ import axios from "axios"
 
 export default class ApiService {
 
-     static BASE_URL = "https://homehub-deployment.onrender.com"
-
-     
+     static BASE_URL = "https://homehub-ytzy.onrender.com"
 
     
 
