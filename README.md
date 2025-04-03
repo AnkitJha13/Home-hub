@@ -4,7 +4,7 @@ Home Hub is a React-based booking management system designed to provide a seamle
 
 ## Website Link
 
-You can access the Movie Mania site by following this link : [Home Hub](https://hubb-home.vercel.app/)
+You can access the Home Hub site by following this link : [Home Hub](https://hubb-home.vercel.app/)
 
 ## ScreenShot
 
