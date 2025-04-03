@@ -1,6 +1,6 @@
 # Home Hub 
 
-Home Hub W is a React-based booking management system designed to provide a seamless experience for managing bookings. This project enables users to perform essential CRUD operations while ensuring efficient filtering, pagination, and secure authentication.
+Home Hub is a React-based booking management system designed to provide a seamless experience for managing bookings. This project enables users to perform essential CRUD operations while ensuring efficient filtering, pagination, and secure authentication.
 
 ## Website Link
 
@@ -10,6 +10,15 @@ You can access the Movie Mania site by following this link : [Home Hub](https://
 
 ![1](https://github.com/user-attachments/assets/cee449db-3dd1-4171-868a-030a21c89157)
 
+![2](https://github.com/user-attachments/assets/dad12e52-c0bc-43fc-b1b5-99a23b31b79b)
+
+![3](https://github.com/user-attachments/assets/e2125fbf-dba6-4700-b6d6-1be791973233)
+
+![4](https://github.com/user-attachments/assets/5c888feb-9912-4f18-b1af-f2c9737670b2)
+
+![5](https://github.com/user-attachments/assets/cdf5d218-fc97-4c1a-a62b-8a4f4e2f1db7)
+
+![6](https://github.com/user-attachments/assets/14bb9fd8-ca7c-4692-8109-7de4de450c75)
 
 
 
