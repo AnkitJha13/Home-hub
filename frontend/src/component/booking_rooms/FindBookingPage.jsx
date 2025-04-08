@@ -25,7 +25,7 @@ const FindBookingPage = () => {
 
     return (
         <div className="find-booking-page">
-            <h2>Find Booking</h2>
+            <h2>Find Booking Details</h2>
             <div className="search-container">
                 <input
                     required
@@ -36,7 +36,11 @@ const FindBookingPage = () => {
                 />
                 <button onClick={handleSearch}>Find</button>
             </div>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+
+            {error && (
+                <p className="error-message">{error}</p>
+            )}
+
             {bookingDetails && (
                 <div className="booking-details">
                     <h3>Booking Details</h3>
@@ -49,11 +53,11 @@ const FindBookingPage = () => {
                     <br />
                     <hr />
                     <br />
-                    <h3>Booker Detials</h3>
+                    <h3>Booker Details</h3>
                     <div>
-                        <p> Name: {bookingDetails.user.name}</p>
-                        <p> Email: {bookingDetails.user.email}</p>
-                        <p> Phone Number: {bookingDetails.user.phoneNumber}</p>
+                        <p>Name: {bookingDetails.user.name}</p>
+                        <p>Email: {bookingDetails.user.email}</p>
+                        <p>Phone Number: {bookingDetails.user.phoneNumber}</p>
                     </div>
 
                     <br />
@@ -61,12 +65,13 @@ const FindBookingPage = () => {
                     <br />
                     <h3>Room Details</h3>
                     <div>
-                        <p> Room Type: {bookingDetails.room.roomType}</p>
-                        <img src={bookingDetails.room.roomPhotoUrl} alt="" sizes="" srcSet="" />
+                        <p>Room Type: {bookingDetails.room.roomType}</p>
+                        <img src={bookingDetails.room.roomPhotoUrl} alt="" />
                     </div>
                 </div>
             )}
         </div>
+
     );
 };
 
