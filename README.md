@@ -20,9 +20,12 @@ You can access the Home Hub site by following this link : [Home Hub](https://hub
 
 ![4](https://github.com/user-attachments/assets/5c888feb-9912-4f18-b1af-f2c9737670b2)
 
-![5](https://github.com/user-attachments/assets/cdf5d218-fc97-4c1a-a62b-8a4f4e2f1db7)
+![Admin-page](https://github.com/user-attachments/assets/25606651-caff-4658-a617-d408fe240be8)
 
-![6](https://github.com/user-attachments/assets/14bb9fd8-ca7c-4692-8109-7de4de450c75)
+![all-bookings](https://github.com/user-attachments/assets/729913ac-303e-4a08-84f7-c7c08a3c9866)
+
+![booking-details](https://github.com/user-attachments/assets/6d765bd5-9383-441f-8f4f-ec7a7779d114)
+
 
 
 
