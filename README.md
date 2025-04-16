@@ -12,6 +12,10 @@ You can access the Home Hub site by following this link : [Home Hub](https://hub
 
 ![2](https://github.com/user-attachments/assets/dad12e52-c0bc-43fc-b1b5-99a23b31b79b)
 
+![register](https://github.com/user-attachments/assets/a869de2e-b101-414c-a912-e1b57c6d4979)
+
+![login](https://github.com/user-attachments/assets/62ea86be-5ffa-489a-a045-28a98d793696)
+
 ![3](https://github.com/user-attachments/assets/e2125fbf-dba6-4700-b6d6-1be791973233)
 
 ![4](https://github.com/user-attachments/assets/5c888feb-9912-4f18-b1af-f2c9737670b2)
