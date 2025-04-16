@@ -29,6 +29,7 @@
 ![All Bookings](https://github.com/user-attachments/assets/729913ac-303e-4a08-84f7-c7c08a3c9866)
 ![Booking Details](https://github.com/user-attachments/assets/6d765bd5-9383-441f-8f4f-ec7a7779d114)
 ![Booking Details 2](https://github.com/user-attachments/assets/88f30390-62dd-468b-ba76-60cfca2fe5b6)
+![findBookingDetails](https://github.com/user-attachments/assets/03526852-cb58-4006-ba3f-aafd9b0fe860)
 
 ---
 
