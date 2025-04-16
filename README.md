@@ -26,6 +26,7 @@ You can access the Home Hub site by following this link : [Home Hub](https://hub
 
 ![booking-details](https://github.com/user-attachments/assets/6d765bd5-9383-441f-8f4f-ec7a7779d114)
 
+![booking-details2](https://github.com/user-attachments/assets/88f30390-62dd-468b-ba76-60cfca2fe5b6)
 
 
 
