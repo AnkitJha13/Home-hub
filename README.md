@@ -2,7 +2,7 @@
 
 **Home Hub W** is a full-stack booking management system designed to offer a seamless and intuitive experience for managing bookings. It supports essential CRUD operations, advanced search and filter capabilities, secure authentication, and cloud-based image storage — all within a responsive user interface.
 
-🔗 **Live Website:** [Home Hub W](https://hubb-home.vercel.app/)
+🔗 **Live Website:** [Home Hub](https://hubb-home.vercel.app/)
 
 ---
 
